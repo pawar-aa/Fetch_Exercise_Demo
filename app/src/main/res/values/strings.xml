@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fetch_Exercise_Demo</string>
+    <string name="string_1">Fetch</string>
+    <string name="str_2">Id</string>
+    <string name="str_3">Fetch something …</string>
+    <string name="str_4">ListId</string>
+    <string name="str_5">Name</string>
+    <string name="str_6">Learn More</string>
+    <string name="todo">TODO</string>
+</resources>

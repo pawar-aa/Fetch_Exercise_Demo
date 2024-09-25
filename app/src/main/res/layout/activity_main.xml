@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"/>
+
+    <SearchView
+        android:id="@+id/sv_1"
+        android:layout_below="@id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:hint="@string/str_3" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        style="?android:attr/buttonBarStyle"
+        android:layout_below="@id/sv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/str_2"
+            android:fontFamily="serif"
+            android:layout_weight="1.5"
+            android:paddingHorizontal="5sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/str_4"
+            android:fontFamily="serif"
+            android:layout_weight="1.5"
+            android:paddingHorizontal="5sp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/str_5"
+            android:fontFamily="serif"
+            android:layout_weight="1.5"
+            android:paddingHorizontal="5sp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <ImageButton
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_setting"
+            android:fontFamily="serif"
+            android:layout_weight="0.5"
+            android:paddingHorizontal="5sp"
+            android:backgroundTint="@color/white"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_1"
+        android:layout_below="@id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
